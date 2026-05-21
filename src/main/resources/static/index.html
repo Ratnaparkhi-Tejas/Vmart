@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vmart | Smart Retail Inventory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Vmart home">
+      <span class="brand-mark">V</span>
+      <span>Vmart</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#inventory">Inventory</a>
+      <a href="#warehouse">Warehouse</a>
+      <a href="#cart">Cart</a>
+      <a href="#vendors">Vendors</a>
+    </nav>
+    <a class="header-action" href="#inventory">Browse stock</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="../../img.png" alt="">
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Retail inventory and billing</p>
+        <h1>Vmart</h1>
+        <p class="hero-copy">
+          A clean storefront for managing products, cold-chain stock, bins, carts, vendors, and checkout totals from one home page.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#cart">Start checkout</a>
+          <a class="secondary-button" href="#warehouse">View warehouse</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Store summary">
+      <article>
+        <span class="metric-value">230</span>
+        <span class="metric-label">Warehouse units</span>
+      </article>
+      <article>
+        <span class="metric-value">45</span>
+        <span class="metric-label">Shelf units</span>
+      </article>
+      <article>
+        <span class="metric-value">2</span>
+        <span class="metric-label">Cold-chain items</span>
+      </article>
+      <article>
+        <span class="metric-value">₹505</span>
+        <span class="metric-label">Sample cart value</span>
+      </article>
+    </section>
+
+    <section id="inventory" class="section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">Live catalogue</p>
+        <h2>Featured inventory</h2>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-visual dairy">AM</div>
+          <div class="product-info">
+            <p class="product-type">Dairy</p>
+            <h3>Milk Packet</h3>
+            <p>Amul 1 kg pack with refrigerated storage enabled.</p>
+            <div class="product-meta">
+              <span>Bin: 20</span>
+              <strong>₹105</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual care">DV</div>
+          <div class="product-info">
+            <p class="product-type">Personal care</p>
+            <h3>Shampoo</h3>
+            <p>Dove shelf stock for standard warehouse handling.</p>
+            <div class="product-meta">
+              <span>Bin: 15</span>
+              <strong>₹100</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-visual frozen">KW</div>
+          <div class="product-info">
+            <p class="product-type">Frozen food</p>
+            <h3>Ice Cream</h3>
+            <p>Kwality Walls frozen item with priority cold storage.</p>
+            <div class="product-meta">
+              <span>Bin: 10</span>
+              <strong>₹300</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="warehouse" class="operations">
+      <div class="section-heading">
+        <p class="eyebrow">Operations board</p>
+        <h2>Warehouse visibility</h2>
+      </div>
+      <div class="operations-layout">
+        <div class="stock-panel">
+          <div class="stock-row">
+            <span>Milk Packet</span>
+            <div class="stock-track"><span style="width: 72%"></span></div>
+            <strong>100</strong>
+          </div>
+          <div class="stock-row">
+            <span>Shampoo</span>
+            <div class="stock-track"><span style="width: 58%"></span></div>
+            <strong>80</strong>
+          </div>
+          <div class="stock-row">
+            <span>Ice Cream</span>
+            <div class="stock-track"><span style="width: 36%"></span></div>
+            <strong>50</strong>
+          </div>
+        </div>
+        <div class="bin-panel">
+          <h3>Bin readiness</h3>
+          <div class="bin-grid" aria-label="Bin rows">
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span class="filled"></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p>Cold and regular rows are grouped so staff can refill shelves quickly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart" class="checkout">
+      <div>
+        <p class="eyebrow">Fast billing</p>
+        <h2>Current cart</h2>
+        <p>
+          The sample cart mirrors the Java model: three products, 8.5 kg current weight, and a calculated checkout total.
+        </p>
+      </div>
+      <div class="cart-card">
+        <div class="cart-line">
+          <span>Milk Packet</span>
+          <strong>₹105</strong>
+        </div>
+        <div class="cart-line">
+          <span>Shampoo</span>
+          <strong>₹100</strong>
+        </div>
+        <div class="cart-line">
+          <span>Ice Cream</span>
+          <strong>₹300</strong>
+        </div>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong>₹505</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="vendors" class="vendor-strip">
+      <div>
+        <p class="eyebrow">Vendor desk</p>
+        <h2>Supplier coordination built in</h2>
+      </div>
+      <p>
+        Track vendor product types, warehouse receipts, returns, and billing counters as the system expands from Java classes into a full retail application.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
